@@ -1,38 +1,16 @@
-# sv
+Supabase's docs on getting set up with sveltekit is a little confusing, especially with their deprecation of some libraries previously used by many making virtually all online tutorials redundant 😜
 
-Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
+I have gone through their docs and managed to create a working skeletal system that has everything already setup for you to jump in and create your files from +page.server.ts to +page.js to +page.svelte and so on without having to go through the stress of setting up your hooks and whatnot.
 
-## Creating a project
+I also added a demo login page as a bonus!
 
-If you're seeing this, you've probably already done this step. Congrats!
-
-```sh
-# create a new project in the current directory
-npx sv create
-
-# create a new project in my-app
-npx sv create my-app
+To get setup, all you need to do is make a new project repository from this template and open it in your code editor. Once you've done that, run:
+```shell
+npm install
 ```
-
-## Developing
-
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
-
-```sh
-npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
+After all installs, create a .env file in your project root and add your supabase project's ANON_KEY AND URL like so:
+```ts
+PUBLIC_SUPABASE_ANON_KEY="blahblahblah"
+PUBLIC_SUPABASE_URL="blahblahblah"
 ```
-
-## Building
-
-To create a production version of your app:
-
-```sh
-npm run build
-```
-
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
+That would be all!
