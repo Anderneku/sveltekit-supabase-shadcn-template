@@ -2,7 +2,7 @@ Supabase's docs on getting set up with sveltekit is a little confusing, especial
 
 I have gone through their docs and managed to create a working skeletal system that has everything already setup for you to jump in and create your files from +page.server.ts to +page.js to +page.svelte and so on without having to go through the stress of setting up your hooks and whatnot.
 
-I also added a demo login page as a bonus!
+I also added a demo login page and an email confirmation endpoint as a bonus!
 
 To get setup, all you need to do is make a new project repository from this template and open it in your code editor. Once you've done that, run:
 ```shell
